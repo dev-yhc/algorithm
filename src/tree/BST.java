@@ -13,6 +13,16 @@ public class BST {
         Node.insertRecursive(root, 52);
         Node.insertRecursive(root, 57);
 
-        Node.traversePreOrderRecursive(root);
+        Node.traverseInOrderRecursive(root);
+
+        System.out.println("---------");
+
+        Node.deleteNodeRecursive(root, 55);
+        Node.traverseInOrderRecursive(root);
+
+        System.out.println("---------");
+        Node copiedNode = Node.copyRecursive(root);
+        Node.traverseInOrderRecursive(copiedNode);
+
     }
 }
